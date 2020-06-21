@@ -127,14 +127,17 @@ void loop() {
 
   HC12.print(x_send);HC12.write("X"); //Send the x angle value and then the "X" character
   HC12.print(y_send);HC12.write("Y"); //Send the y angle value and then the "Y" character
-  delay(20); //Add a delay of 50. This might affect the transmission 
+  delay(10); //Add a delay of 50. This might affect the transmission 
    //Uncoment the next lines if you want to print the values on the serial monitor  
+
+   /*
    Serial.print("Xº: ");
    Serial.print(x_send);
    Serial.print("   |   ");
    Serial.print("Yº: ");
    Serial.print(y_send);
    Serial.println(" ");
+   */
 }//End of void loop
 
 
